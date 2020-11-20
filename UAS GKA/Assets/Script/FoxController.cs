@@ -4,21 +4,31 @@ using UnityEngine;
 
 public class FoxController : MonoBehaviour
 {
-    public float speed = 10.0f;
+    public float speedX = 10.0f;
+    public float speedZ = 10.0f;
     Animator anim;
 
     private void Awake() {
         anim = this.GetComponent<Animator>();
+        
+    }
+
+    private void Update() {
+        
     }
 
     private void FixedUpdate() {
-        float horizontalAxis = Input.GetAxis("Horizontal") * speed;
+        float horizontalAxis = Input.GetAxis("Horizontal") * speedX;
         horizontalAxis *= Time.fixedDeltaTime;
+        float vertical = speedZ * Time.fixedDeltaTime;
         transform.Translate(horizontalAxis, 0, 0);
+        transform.Translate(0, 0, vertical);
+        
 
         if (Input.GetMouseButton(0)) {
             anim.SetBool("isRunning", true);
-        } else if (Input.GetKeyDown(KeyCode.Space)) {
+        } 
+        else if (Input.GetKeyDown(KeyCode.Space)) {
             if (this.GetComponent<Animator>().GetBool("isGrounded") == true)
             {
                 anim.SetBool("isGrounded", false);
@@ -28,17 +38,6 @@ public class FoxController : MonoBehaviour
                 anim.SetBool("isGrounded", true);
             }
         }
-
-        if(Input.GetKey(KeyCode.LeftArrow)) {
-            anim.SetBool("isTurnLeft", true);
-        } else {
-            anim.SetBool("isTurnLeft", false);
-        }
-
-        if(Input.GetKey(KeyCode.RightArrow)) {
-            anim.SetBool("isTurnRight", true);
-        } else {
-            anim.SetBool("isTurnRight", false);
-        }
     }
+    
 }
