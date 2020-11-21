@@ -11,10 +11,17 @@ public class TileManager : MonoBehaviour
     private float tileLength = 22.5f;
     private int amnTilesOnScreen = 3;
 
+    public GameObject sky;
+    public GameObject mountain;
+    public GameObject cloud;
+    float positionIncrement = 0;
 
-    // Start is called before the first frame update
     void Start()
     {
+        sky = GameObject.Find("sky");
+        mountain = GameObject.Find("Mountain");
+        cloud = GameObject.Find("Cloud");
+
         playerTransform = GameObject.FindGameObjectWithTag("Fox").transform;
         for (int i = 0; i < amnTilesOnScreen; i++)
         {
@@ -22,12 +29,15 @@ public class TileManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (playerTransform.position.z > (spawnZ - amnTilesOnScreen * tileLength))
         {
             SpawnTiles();
+
+            transformPosition(sky);
+            transformPosition(mountain);
+            transformPosition(cloud);
         }
     }
 
@@ -38,5 +48,10 @@ public class TileManager : MonoBehaviour
         go.transform.SetParent(transform);
         go.transform.position = Vector3.forward * spawnZ;
         spawnZ += tileLength;
+    }
+
+    void transformPosition(GameObject obj) {
+        positionIncrement += 10.0f;
+        obj.transform.position = new Vector3(transform.position.x, transform.position.x, transform.position.z + positionIncrement);
     }
 }
