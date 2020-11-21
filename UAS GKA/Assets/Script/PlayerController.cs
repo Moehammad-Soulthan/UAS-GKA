@@ -8,8 +8,8 @@ public class PlayerController : MonoBehaviour
 
     // Movement
     private CharacterController controller;
-    private float jumpForce = 4.0f;
-    private float gravity = 12.0f;
+    // private float jumpForce = 4.0f;
+    // private float gravity = 12.0f;
     private float verticalVelocity;
     private float speed = 15.0f;
     private int desiredLane = 1; // 0 = Left, 1 = Middle, 2 = Right
