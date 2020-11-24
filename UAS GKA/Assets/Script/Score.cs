@@ -7,8 +7,8 @@ public class Score : MonoBehaviour
     private float score = 0.0f;
 
     private int difficultyLevel = 1;
-    private int maxDifficultyLevel = 10;
-    private int toNextDifficulty = 10;
+    private int maxDifficultyLevel = 7;
+    private int toNextDifficulty = 30;
 
     public Text scoreText;
 
