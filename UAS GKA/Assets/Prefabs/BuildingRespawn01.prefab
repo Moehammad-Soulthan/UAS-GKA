@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7546558309271009893}
   - component: {fileID: 7546558309271009897}
   - component: {fileID: 7546558309271009894}
-  - component: {fileID: 7546558309271009895}
   m_Layer: 0
   m_Name: rpgpp_lt_tree_pine_01
   m_TagString: Untagged
@@ -80,20 +79,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7546558309271009895
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7546558309271009892}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 58c79ebc04f48c74fa4869c3f7d941fd, type: 3}
 --- !u!1 &7546558309367127921
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,7 +162,6 @@ GameObject:
   - component: {fileID: 7546558309410857365}
   - component: {fileID: 7546558309410857369}
   - component: {fileID: 7546558309410857366}
-  - component: {fileID: 7546558309410857367}
   m_Layer: 0
   m_Name: rpgpp_lt_tree_01 (1)
   m_TagString: Untagged
@@ -246,20 +230,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7546558309410857367
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7546558309410857364}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 15977c94193725642b83e5c7be73b2e8, type: 3}
 --- !u!1 &7546558309437692619
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,7 +320,6 @@ GameObject:
   - component: {fileID: 7546558309494099854}
   - component: {fileID: 7546558309494099890}
   - component: {fileID: 7546558309494099891}
-  - component: {fileID: 7546558309494099888}
   m_Layer: 0
   m_Name: rpgpp_lt_building_04
   m_TagString: Untagged
@@ -419,20 +388,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7546558309494099888
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7546558309494099889}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: cc4034e4bb7d9cd418975561c7bcd316, type: 3}
 --- !u!1 &7546558309581867844
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,7 +399,6 @@ GameObject:
   - component: {fileID: 7546558309581867845}
   - component: {fileID: 7546558309581867849}
   - component: {fileID: 7546558309581867846}
-  - component: {fileID: 7546558309581867847}
   m_Layer: 0
   m_Name: rpgpp_lt_tree_02 (1)
   m_TagString: Untagged
@@ -513,20 +467,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7546558309581867847
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7546558309581867844}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 7dca68918011bd644a4dc268eea79b44, type: 3}
 --- !u!1 &7546558309788587315
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,7 +763,6 @@ GameObject:
   - component: {fileID: 7546558310171501182}
   - component: {fileID: 7546558310171501154}
   - component: {fileID: 7546558310171501155}
-  - component: {fileID: 7546558310171501152}
   m_Layer: 0
   m_Name: rpgpp_lt_building_01 (1)
   m_TagString: Untagged
@@ -892,20 +831,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7546558310171501152
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7546558310171501153}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: af5390e2a0373984db3740f21c0ec034, type: 3}
 --- !u!1 &7546558310225465970
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,7 +921,6 @@ GameObject:
   - component: {fileID: 7546558310340904240}
   - component: {fileID: 7546558310340904244}
   - component: {fileID: 7546558310340904245}
-  - component: {fileID: 7546558310340904242}
   m_Layer: 0
   m_Name: rpgpp_lt_tree_pine_01 (1)
   m_TagString: Untagged
@@ -1065,20 +989,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7546558310340904242
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7546558310340904243}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 58c79ebc04f48c74fa4869c3f7d941fd, type: 3}
 --- !u!1 &7546558310351040211
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,7 +1204,6 @@ GameObject:
   - component: {fileID: 7546558310439409352}
   - component: {fileID: 7546558310439409356}
   - component: {fileID: 7546558310439409357}
-  - component: {fileID: 7546558310439409354}
   m_Layer: 0
   m_Name: rpgpp_lt_building_01
   m_TagString: Untagged
@@ -1363,20 +1272,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7546558310439409354
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7546558310439409355}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: af5390e2a0373984db3740f21c0ec034, type: 3}
 --- !u!1 &7546558310527230392
 GameObject:
   m_ObjectHideFlags: 0
@@ -1614,7 +1509,6 @@ GameObject:
   - component: {fileID: 7546558310734220690}
   - component: {fileID: 7546558310734220694}
   - component: {fileID: 7546558310734220695}
-  - component: {fileID: 7546558310734220692}
   m_Layer: 0
   m_Name: rpgpp_lt_rock_02 (1)
   m_TagString: Untagged
@@ -1683,20 +1577,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7546558310734220692
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7546558310734220693}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: d1fd41beb70267947bc1c996df07593d, type: 3}
 --- !u!1 &7546558310847308823
 GameObject:
   m_ObjectHideFlags: 0
@@ -1787,7 +1667,6 @@ GameObject:
   - component: {fileID: 7546558310856910170}
   - component: {fileID: 7546558310856910174}
   - component: {fileID: 7546558310856910175}
-  - component: {fileID: 7546558310856910172}
   m_Layer: 0
   m_Name: rpgpp_lt_tree_02
   m_TagString: Untagged
@@ -1856,20 +1735,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7546558310856910172
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7546558310856910173}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 7dca68918011bd644a4dc268eea79b44, type: 3}
 --- !u!1 &7546558310886299857
 GameObject:
   m_ObjectHideFlags: 0
@@ -1881,7 +1746,6 @@ GameObject:
   - component: {fileID: 7546558310886299856}
   - component: {fileID: 7546558310886299861}
   - component: {fileID: 7546558310886299858}
-  - component: {fileID: 7546558310886299859}
   m_Layer: 0
   m_Name: rpgpp_lt_building_04 (1)
   m_TagString: Untagged
@@ -1950,20 +1814,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7546558310886299859
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7546558310886299857}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: cc4034e4bb7d9cd418975561c7bcd316, type: 3}
 --- !u!1 &7546558310907834993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2054,7 +1904,6 @@ GameObject:
   - component: {fileID: 7546558310924450536}
   - component: {fileID: 7546558310924450540}
   - component: {fileID: 7546558310924450541}
-  - component: {fileID: 7546558310924450538}
   m_Layer: 0
   m_Name: rpgpp_lt_tree_01
   m_TagString: Untagged
@@ -2123,20 +1972,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7546558310924450538
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7546558310924450539}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 15977c94193725642b83e5c7be73b2e8, type: 3}
 --- !u!1 &7546558310955787526
 GameObject:
   m_ObjectHideFlags: 0
@@ -2148,7 +1983,6 @@ GameObject:
   - component: {fileID: 7546558310955787527}
   - component: {fileID: 7546558310955787531}
   - component: {fileID: 7546558310955787528}
-  - component: {fileID: 7546558310955787529}
   m_Layer: 0
   m_Name: rpgpp_lt_rock_small_01
   m_TagString: Untagged
@@ -2217,20 +2051,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7546558310955787529
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7546558310955787526}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 274fdec0feeaa784f96a62f99c4be287, type: 3}
 --- !u!1 &7546558310990368981
 GameObject:
   m_ObjectHideFlags: 0
@@ -2464,7 +2284,6 @@ GameObject:
   - component: {fileID: 7546558311158355772}
   - component: {fileID: 7546558311158355744}
   - component: {fileID: 7546558311158355745}
-  - component: {fileID: 7546558311158355774}
   m_Layer: 0
   m_Name: rpgpp_lt_rock_02
   m_TagString: Untagged
@@ -2533,20 +2352,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7546558311158355774
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7546558311158355775}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: d1fd41beb70267947bc1c996df07593d, type: 3}
 --- !u!1 &7546558311241801233
 GameObject:
   m_ObjectHideFlags: 0
