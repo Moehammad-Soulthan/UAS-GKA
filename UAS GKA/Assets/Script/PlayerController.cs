@@ -77,4 +77,8 @@ public class PlayerController : MonoBehaviour
         desiredLane = Mathf.Clamp(desiredLane, 0, 2);
     }
 
+    public void setSpeed(float modifier)
+    {
+        speed = 15.0f + modifier;
+    }
 }
