@@ -46,11 +46,17 @@ public class AudioManage : MonoBehaviour
     public void  playgamebacksound()
     {
         AudioSource3.Play();
+        
     }
 
     public void playmenubacksound()
     {
         AudioSource4.Play();
+    }
+
+    public void pausegamebacksound()
+    {
+        AudioSource3.Pause();
     }
 
 }
