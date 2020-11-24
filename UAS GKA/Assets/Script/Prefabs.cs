@@ -12,7 +12,7 @@ public class Prefabs : MonoBehaviour
 
     // Update is called once per frame
     IEnumerator fordestroy(){
-        yield return new WaitForSeconds(9f);
+        yield return new WaitForSeconds(9.5f);
         Destroy(this.gameObject);
     }
 }

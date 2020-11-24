@@ -56,7 +56,7 @@ public class TileManager : MonoBehaviour
     }
 
     void transformPosition(GameObject obj) {
-        positionIncrement += 10.0f;
+        positionIncrement += 9.0f;
         obj.transform.position = new Vector3(transform.position.x, transform.position.x, transform.position.z + positionIncrement);
     }
 }
