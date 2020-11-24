@@ -11,15 +11,20 @@ public class AudioManage : MonoBehaviour
     public AudioClip closesound;
     public AudioSource AudioSource2;
 
-    public AudioClip background;
+    public AudioClip backsoundingame;
     public AudioSource AudioSource3;
+
+    public AudioClip backsoundinmenu;
+    public AudioSource AudioSource4;
 
     void Start()
     {
         AudioSource.clip = popsound;
         AudioSource2.clip = closesound;
-        AudioSource3.clip = background;
+        AudioSource3.clip = backsoundingame;
+        AudioSource4.clip = backsoundinmenu;
         AudioSource3.Play();
+        AudioSource4.Play();
     }
 
     // Update is called once per frame
@@ -38,5 +43,14 @@ public class AudioManage : MonoBehaviour
         AudioSource2.Play();
     }
 
+    public void  playgamebacksound()
+    {
+        AudioSource3.Play();
+    }
+
+    public void playmenubacksound()
+    {
+        AudioSource4.Play();
+    }
 
 }
