@@ -9,7 +9,8 @@ public class TileManager : MonoBehaviour
     private Transform playerTransform;
     private float spawnZ = 0.0f;
     private float tileLength = 22.5f;
-    private int amnTilesOnScreen = 3;
+    private int amnTilesOnScreen = 6;
+    
 
     public GameObject sky;
     public GameObject mountain;
@@ -21,12 +22,13 @@ public class TileManager : MonoBehaviour
         sky = GameObject.Find("sky");
         mountain = GameObject.Find("Mountain");
         cloud = GameObject.Find("Cloud");
-
         playerTransform = GameObject.FindGameObjectWithTag("Fox").transform;
+
         for (int i = 0; i < amnTilesOnScreen; i++)
         {
             SpawnTiles();
         }
+
     }
 
     void Update()
@@ -35,10 +37,13 @@ public class TileManager : MonoBehaviour
         {
             SpawnTiles();
 
+            
             transformPosition(sky);
             transformPosition(mountain);
             transformPosition(cloud);
+    
         }
+      
     }
 
     void SpawnTiles(int prefabIndex = -1)
