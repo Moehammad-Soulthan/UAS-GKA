@@ -6468,6 +6468,7 @@ MonoBehaviour:
   - {fileID: 7546558311031958350, guid: 720b56462ff91d84aa6a13f50e40251d, type: 3}
   - {fileID: 7546558311031958350, guid: 1123d676e38d9ce48b8627f7e1d2785f, type: 3}
   - {fileID: 7546558311031958350, guid: 43bf43f2ed473084bacd97cf41cdc307, type: 3}
+  - {fileID: 3031896231268521379, guid: 98b33944f351df042be471bf4ed01b78, type: 3}
   sky: {fileID: 0}
   mountain: {fileID: 0}
   cloud: {fileID: 0}
