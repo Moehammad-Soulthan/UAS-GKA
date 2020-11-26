@@ -15,7 +15,7 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -37,5 +37,6 @@ public class Score : MonoBehaviour
         difficultyLevel++;
 
         GetComponent<PlayerController>().setSpeed(difficultyLevel);
+        GameObject.Find("Camera").GetComponent<CameraPosition>().setPosition();
     }
 }

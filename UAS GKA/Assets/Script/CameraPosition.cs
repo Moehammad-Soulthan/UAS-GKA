@@ -16,4 +16,8 @@ public class CameraPosition : MonoBehaviour
         desiredPosition.x = 0;
         transform.position = Vector3.Lerp(transform.position, desiredPosition, Time.deltaTime);
     }
+
+    public void setPosition() {
+        offset.z += 1.2f;
+    }
 }
