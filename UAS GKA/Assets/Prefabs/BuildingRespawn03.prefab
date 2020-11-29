@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9070656622959167810}
-  - component: {fileID: 6050752571969373161}
+  - component: {fileID: 3093353252759239082}
   m_Layer: 0
   m_Name: Combo
   m_TagString: Enemy
@@ -64,8 +64,8 @@ Transform:
   m_Father: {fileID: 8647591094485535559}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!135 &6050752571969373161
-SphereCollider:
+--- !u!65 &3093353252759239082
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -75,8 +75,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.35
-  m_Center: {x: 0.65, y: 0.5, z: -0.55}
+  m_Size: {x: 2, y: 3, z: 2}
+  m_Center: {x: 0.5, y: 1.5, z: -0.5}
 --- !u!1 &7546558309271009892
 GameObject:
   m_ObjectHideFlags: 0
