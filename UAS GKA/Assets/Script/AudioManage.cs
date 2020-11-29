@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class AudioManage : MonoBehaviour
 {
+    public Button musicbuttonstop, musicbuttonplay;
+
     public AudioClip popsound;
     public AudioSource AudioSource;
 
@@ -25,6 +27,7 @@ public class AudioManage : MonoBehaviour
         AudioSource4.clip = backsoundinmenu;
         AudioSource3.Play();
         AudioSource4.Play();
+
     }
 
     // Update is called once per frame
@@ -58,5 +61,29 @@ public class AudioManage : MonoBehaviour
     {
         AudioSource3.Pause();
     }
+
+    // public void stopmusic()
+    // {
+    //     AudioSource3.Pause();
+    //     AudioSource4.Pause();
+    // }
+
+    // public void playmusic()
+    // {
+    //     AudioSource3.Play();
+    //     AudioSource4.Play();
+    // }
+
+    // public void musicplayactive()
+    // {
+    //     musicbuttonplay.enabled = true;
+    //     musicbuttonstop.enabled = false;
+    // }
+
+    // public void musicstopactive()
+    // {
+    //    musicbuttonplay.enabled = false;
+    //     musicbuttonstop.enabled = true;
+    // }
 
 }
