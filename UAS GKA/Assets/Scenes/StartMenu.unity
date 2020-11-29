@@ -14030,7 +14030,7 @@ GameObject:
   - component: {fileID: 1323286052}
   - component: {fileID: 1323286051}
   m_Layer: 5
-  m_Name: FaqButton (1)
+  m_Name: highscore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14670,6 +14670,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a299923f0213c9e45b48c1cb426e2c8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musicbuttonstop: {fileID: 1686108281}
+  musicbuttonplay: {fileID: 0}
   popsound: {fileID: 8300000, guid: f6c19c37121efd248a73348feca010d5, type: 3}
   AudioSource: {fileID: 1388567713}
   closesound: {fileID: 8300000, guid: f8dc182f097806e44bdfda1f39b319ad, type: 3}
@@ -17464,7 +17466,7 @@ GameObject:
   - component: {fileID: 1686108282}
   - component: {fileID: 1686108281}
   m_Layer: 5
-  m_Name: SoundButton
+  m_Name: SoundButtonstop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
