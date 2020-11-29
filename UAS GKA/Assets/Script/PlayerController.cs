@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private float verticalVelocity;
     public float speed = 15.0f;
     private int desiredLane = 1; // 0 = Left, 1 = Middle, 2 = Right
+    private bool isDead = false;
     Animator anim;
 
     private void Awake() {
@@ -51,6 +52,9 @@ public class PlayerController : MonoBehaviour
     }
 
     private void Update() {
+        if (isDead)
+            return;
+
         if(Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
             MoveLane(false);
         if(Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
@@ -80,5 +84,17 @@ public class PlayerController : MonoBehaviour
     public void setSpeed(float modifier)
     {
         speed = 15.0f + modifier;
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if (hit.gameObject.CompareTag("Enemy"))
+            Death();
+    }
+
+    private void Death()
+    {
+        isDead = true;
+        GetComponent<Score>().OnDeath();
     }
 }
