@@ -9,8 +9,10 @@ public class Score : MonoBehaviour
     private int difficultyLevel = 1;
     private int maxDifficultyLevel = 7;
     private int toNextDifficulty = 30;
+    private bool isDead = false;
 
     public Text scoreText;
+    public DeathMenu deathMenu;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +23,9 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isDead)
+            return;
+
         if (score >= toNextDifficulty)
             LevelUp();
 
@@ -38,5 +43,11 @@ public class Score : MonoBehaviour
 
         GetComponent<PlayerController>().setSpeed(difficultyLevel);
         GameObject.Find("Camera").GetComponent<CameraPosition>().setPosition();
+    }
+
+    public void OnDeath()
+    {
+        isDead = true;
+        deathMenu.ToggleEndMenu(score);
     }
 }
