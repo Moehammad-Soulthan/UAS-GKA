@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     Animator anim;
 
     private void Awake() {
+        isDead = false;
         anim = this.GetComponent<Animator>();
     }
 
@@ -106,6 +107,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
+        // Debug.Log(hit.gameObject.name);
         if (hit.gameObject.CompareTag("Enemy"))
             Death();
     }
