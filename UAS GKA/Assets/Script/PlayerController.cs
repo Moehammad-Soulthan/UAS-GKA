@@ -8,8 +8,8 @@ public class PlayerController : MonoBehaviour
 
     // Movement
     private CharacterController controller;
-    // private float jumpForce = 4.0f;
-    // private float gravity = 12.0f;
+    private float jumpForce = 11f;
+    private float gravity = 12.0f;
     private float verticalVelocity;
     public float speed = 15.0f;
     private int desiredLane = 1; // 0 = Left, 1 = Middle, 2 = Right
@@ -70,7 +70,25 @@ public class PlayerController : MonoBehaviour
 
         Vector3 moveVector = Vector3.zero;
         moveVector.x = (targetPosition - transform.position).normalized.x * speed;
-        moveVector.y = -0.1f;
+
+        // Calculate Y
+        if(IsGrounded()) { // If Grounded
+            verticalVelocity = -0.1f;
+
+            if(Input.GetKeyDown(KeyCode.Space)) {
+                // Jump
+                verticalVelocity = jumpForce;   
+            }
+        } else {
+            verticalVelocity -= (gravity * Time.deltaTime);
+
+            // Fast Falling Mechanic
+            // if(Input.GetKeyDown(KeyCode.Space)) {
+            //     verticalVelocity = -jumpForce;
+            // }
+        }
+
+        moveVector.y = verticalVelocity;
         moveVector.z = speed;
 
         controller.Move(moveVector * Time.deltaTime);
@@ -96,5 +114,17 @@ public class PlayerController : MonoBehaviour
     {
         isDead = true;
         GetComponent<Score>().OnDeath();
+    }
+
+    private bool IsGrounded() {
+        Ray groundRay = new Ray(
+            new Vector3(
+                controller.bounds.center.x,
+                (controller.bounds.center.y - controller.bounds.extents.y) + 0.2f,
+                controller.bounds.center.z), 
+            Vector3.down);
+        // Debug.DrawRay(groundRay.origin, groundRay.direction, Color.cyan, 1.0f); 
+
+        return Physics.Raycast(groundRay, 0.2f + 0.1f);
     }
 }
