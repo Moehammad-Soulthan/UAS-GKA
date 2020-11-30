@@ -13487,7 +13487,7 @@ GameObject:
   - component: {fileID: 1174531650}
   - component: {fileID: 1174531649}
   m_Layer: 5
-  m_Name: highscore (1)
+  m_Name: HighscoreButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18208,7 +18208,7 @@ GameObject:
   - component: {fileID: 1686108282}
   - component: {fileID: 1686108281}
   m_Layer: 5
-  m_Name: SoundButtonstop
+  m_Name: Exit Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
