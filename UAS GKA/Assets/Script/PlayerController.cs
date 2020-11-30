@@ -75,17 +75,17 @@ public class PlayerController : MonoBehaviour
         if(IsGrounded()) { // If Grounded
             verticalVelocity = -0.1f;
 
-            if(Input.GetKeyDown(KeyCode.Space)) {
+            if(Input.GetKey(KeyCode.Space)) {
                 // Jump
                 verticalVelocity = jumpForce;   
-            }
+            } 
         } else {
             verticalVelocity -= (gravity * Time.deltaTime);
 
             // Fast Falling Mechanic
-            // if(Input.GetKeyDown(KeyCode.Space)) {
-            //     verticalVelocity = -jumpForce;
-            // }
+            if(Input.GetKeyDown(KeyCode.Space)) {
+                verticalVelocity = -jumpForce;
+            }
         }
 
         moveVector.y = verticalVelocity;
