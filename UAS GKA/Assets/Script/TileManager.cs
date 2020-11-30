@@ -9,7 +9,7 @@ public class TileManager : MonoBehaviour
     private List<GameObject> activeTiles;
 
     private Transform playerTransform;
-    private float spawnZ = 0.0f;
+    private float spawnZ = -22.5f;
     private float tileLength = 22.5f;
     private int amnTilesOnScreen = 6;
     private int lastPrefabIndex = 0;
@@ -29,7 +29,7 @@ public class TileManager : MonoBehaviour
 
         for (int i = 0; i < amnTilesOnScreen; i++)
         {
-            if (i < 2)
+            if (i < 4)
                 SpawnTiles(0);
             else
                 SpawnTiles();
