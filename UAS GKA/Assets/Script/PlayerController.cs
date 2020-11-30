@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate() {
         
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if (Input.GetKey(KeyCode.Space)) {
             if (this.GetComponent<Animator>().GetBool("isGrounded") == true)
             {
                 anim.SetBool("isGrounded", false);
