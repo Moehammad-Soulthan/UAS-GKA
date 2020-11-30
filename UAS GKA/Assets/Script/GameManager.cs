@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public Canvas credit;
     public Button play;
 
+
     void Start()
     {
         credit.enabled = false;
