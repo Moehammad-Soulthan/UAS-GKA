@@ -50,4 +50,10 @@ public class GameManager : MonoBehaviour
             highscorePanel.gameObject.SetActive (false);
         } 
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+        Debug.Log("QUIT!!");
+    }
 }
