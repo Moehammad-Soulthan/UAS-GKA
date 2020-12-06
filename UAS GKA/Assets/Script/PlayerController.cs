@@ -115,6 +115,11 @@ public class PlayerController : MonoBehaviour
             Destroy(hit.gameObject);
             speed -= 0.5f;
         }
+
+        if (hit.gameObject.CompareTag("Increment")) {
+            Destroy(hit.gameObject);
+            speed += 1f;
+        }
     }
 
     private void Death()

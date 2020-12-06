@@ -7,6 +7,7 @@ TagManager:
   - Fox
   - Enemy
   - Potion
+  - Increment
   layers:
   - Default
   - TransparentFX
