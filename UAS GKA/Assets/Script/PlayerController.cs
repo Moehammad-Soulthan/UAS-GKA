@@ -110,6 +110,11 @@ public class PlayerController : MonoBehaviour
         // Debug.Log(hit.gameObject.name);
         if (hit.gameObject.CompareTag("Enemy"))
             Death();
+
+        if (hit.gameObject.CompareTag("Potion")) {
+            Destroy(hit.gameObject);
+            speed -= 0.5f;
+        }
     }
 
     private void Death()

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fox
   - Enemy
+  - Potion
   layers:
   - Default
   - TransparentFX
