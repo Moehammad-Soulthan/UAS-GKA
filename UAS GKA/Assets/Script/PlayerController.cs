@@ -39,13 +39,13 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if(Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) {
+        if(Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) {
             anim.SetBool("isTurnLeft", true);
         } else {
             anim.SetBool("isTurnLeft", false);
         }
 
-        if(Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) {
+        if(Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)) {
             anim.SetBool("isTurnRight", true);
         } else {
             anim.SetBool("isTurnRight", false);
