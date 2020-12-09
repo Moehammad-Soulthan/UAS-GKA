@@ -16,6 +16,10 @@ public class PlayerController : MonoBehaviour
     private bool isDead = false;
     Animator anim;
 
+    // Player Effect 
+    public GameObject potionEffect;
+    public GameObject incrementEffect;
+
     private void Awake() {
         isDead = false;
         anim = this.GetComponent<Animator>();
@@ -114,11 +118,13 @@ public class PlayerController : MonoBehaviour
         if (hit.gameObject.CompareTag("Potion")) {
             Destroy(hit.gameObject);
             speed -= 0.5f;
+            potionEffect.GetComponent<PlayerEffect>().setActive();
         }
 
         if (hit.gameObject.CompareTag("Increment")) {
             Destroy(hit.gameObject);
             speed += 1f;
+            incrementEffect.GetComponent<PlayerEffect>().setActive();
         }
     }
 
